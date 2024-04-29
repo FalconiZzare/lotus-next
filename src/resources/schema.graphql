@@ -1,0 +1,84 @@
+# This file was generated. Do not edit manually.
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Authors {
+    id: ID!
+    name: String!
+    reviews: [Reviews!]
+    verified: Boolean!
+}
+
+type GameMutationResponse {
+    game: Games
+    response: ServerResponse!
+}
+
+type GameQuery {
+    game: Games
+    graph: GraphVisual
+}
+
+type Games {
+    id: ID!
+    platform: [String!]!
+    reviews: ReviewsQuery
+    title: String!
+}
+
+type GamesQuery {
+    games: [Games]
+    graph: GraphVisual
+}
+
+type GraphVisual {
+    nodes: String
+    relationships: String
+}
+
+type Mutation {
+    addGame(game: AddGameInput!): GameMutationResponse!
+    deleteGame(id: ID!): GameMutationResponse!
+    updateGame(edits: EditGameInput!, id: ID!): GameMutationResponse!
+}
+
+type Query {
+    author(id: ID!): Authors
+    authors: [Authors]
+    game(id: ID!): GameQuery
+    games: GamesQuery
+    review(id: ID!): Reviews
+    reviews: ReviewsQuery
+}
+
+type Reviews {
+    author: Authors!
+    content: String!
+    game: Games!
+    id: ID!
+    rating: Int!
+}
+
+type ReviewsQuery {
+    graph: GraphVisual
+    reviews: [Reviews]
+}
+
+type ServerResponse {
+    code: Int!
+    message: String!
+    success: Boolean!
+}
+
+input AddGameInput {
+    platform: [String!]!
+    title: String!
+}
+
+input EditGameInput {
+    platform: [String!]
+    title: String
+}
