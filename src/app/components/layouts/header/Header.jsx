@@ -11,8 +11,8 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle
 } from "@/app/components/ui/navigation-menu.jsx";
-import MobileNav from "@/app/components/layouts/Header/MobileNav.jsx";
-import ButtonGroup from "@/app/components/layouts/Header/ButtonGroup.jsx";
+import MobileNav from "@/app/components/layouts/header/MobileNav.jsx";
+import ButtonGroup from "@/app/components/layouts/header/ButtonGroup.jsx";
 import { HeaderData } from "@/constants/HeaderConstants.jsx";
 import Lotus from "@/assets/lotus.webp";
 import Image from "next/image";

@@ -1,5 +1,5 @@
 import { Salad, Webhook } from "lucide-react";
-import Rotator from "@/app/components/layouts/Header/Rotator.jsx";
+import Rotator from "@/app/components/layouts/header/Rotator.jsx";
 
 export const HeaderData = [
   {

@@ -2,7 +2,7 @@
 
 import React from "react";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
-import { ThemeProvider } from "@/app/components/layouts/Theme/ThemeProvider";
+import { ThemeProvider } from "@/app/components/layouts/theme/ThemeProvider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/app/components/ui/sonner";
 import { ThemeSwitcher } from "@/app/components/layouts/theme/ThemeSwitcher";
