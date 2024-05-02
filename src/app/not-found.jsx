@@ -1,6 +1,6 @@
-import { Button } from "@/components/ui/button.jsx";
-import EarthCanvas from "@/components/Canvas/Earth";
-import StarsCanvas from "@/components/Canvas/Stars";
+import { Button } from "@/app/components/ui/button.jsx";
+import EarthCanvas from "@/app/components/canvas/Earth";
+import StarsCanvas from "@/app/components/canvas/Stars";
 
 import Rocket from "@/assets/rocket.svg";
 import Moon from "@/assets/moon.svg";

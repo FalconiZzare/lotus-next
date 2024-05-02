@@ -2,11 +2,12 @@
 
 import React from "react";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
-import { ThemeProvider } from "next-themes";
+import { ThemeProvider } from "@/app/components/layouts/Theme/ThemeProvider";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { Toaster } from "@/components/ui/sonner";
+import { Toaster } from "@/app/components/ui/sonner";
+import { ThemeSwitcher } from "@/app/components/layouts/theme/ThemeSwitcher";
 
-const Providers = ({ children }) => {
+export const Providers = ({ children }) => {
   const client = new ApolloClient({
     uri: "http://localhost:4000/graphql",
     cache: new InMemoryCache()
@@ -25,6 +26,7 @@ const Providers = ({ children }) => {
         >
           {children}
           <Toaster position={"bottom-right"} closeButton />
+          <ThemeSwitcher />
         </ThemeProvider>
       </ApolloProvider>
     </QueryClientProvider>

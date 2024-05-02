@@ -1,6 +1,6 @@
 .next
 node_modules
 public
-src/components/ui
+src/app/components/ui
 package-lock.json
 package.json

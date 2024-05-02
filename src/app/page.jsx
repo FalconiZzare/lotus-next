@@ -1,7 +1,7 @@
 "use client";
 
-import CrystalCanvas from "@/components/Canvas/Crystal";
-import AnimatedCrawler from "@/components/Canvas/AnimatedCrawler.jsx";
+import CrystalCanvas from "@/app/components/canvas/Crystal";
+import AnimatedCrawler from "@/app/components/canvas/AnimatedCrawler.jsx";
 
 const Home = () => {
   return (

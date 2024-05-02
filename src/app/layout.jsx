@@ -1,7 +1,8 @@
-import "@/style/globals.css";
-import "@/style/index.css";
-import Header from "@/components/layouts/Header/Header";
-import Footer from "@/components/layouts/Footer/Footer";
+import "./index.css";
+import "./globals.css";
+import "./themes.css";
+import Header from "@/app/components/layouts/header/Header";
+import Footer from "@/app/components/layouts/footer/Footer";
 import Providers from "@/app/providers";
 import { siteConfig } from "@/constants/SiteConfig";
 
@@ -33,6 +34,13 @@ export const metadata = {
       }
     ]
   }
+};
+
+export const viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "black" }
+  ]
 };
 
 export default function RootLayout({ children }) {
