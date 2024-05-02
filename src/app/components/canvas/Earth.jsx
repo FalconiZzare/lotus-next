@@ -1,14 +1,13 @@
 "use client";
 
 import { Suspense } from "react";
-// import { useLocation } from "react-router-dom";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "@/app/components/canvas/Loader.jsx";
 
 const Earth = () => {
-  const stylizedEarth = useGLTF(`/lotus-next/3DModels/stylized_planet/stylized_planet.glb`);
+  const stylizedEarth = useGLTF(`${process.env.NEXT_PUBLIC_GH_PAGES ? "" : "/lotus-next"}/3DModels/stylized_planet/stylized_planet.glb`);
   return <primitive object={stylizedEarth.scene} scale={2.5} position-y={0} rotation-y={0} />;
 };
 

@@ -6,7 +6,7 @@ import CanvasLoader from "@/app/components/canvas/Loader.jsx";
 
 const Crystal = (props) => {
   const group = useRef();
-  const model = useGLTF("/lotus-next/3DModels/crystal/crystal.glb");
+  const model = useGLTF(`${process.env.NEXT_PUBLIC_GH_PAGES ? "" : "/lotus-next"}/3DModels/crystal/crystal.glb`);
   const { nodes, scene, animations } = model;
 
   //DIFFERENT APPROACH//
