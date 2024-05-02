@@ -1,6 +1,6 @@
 import { Button } from "@/app/components/ui/button.jsx";
 import { Github } from "lucide-react";
-import { ModeToggle } from "@/app/components/layouts/Theme/ModeToggle.jsx";
+import { ModeToggle } from "@/app/components/layouts/theme/ModeToggle.jsx";
 import ThemeButton from "@/app/components/layouts/theme/ThemeButton.jsx";
 
 const ButtonGroup = () => {
